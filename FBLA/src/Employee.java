@@ -3,19 +3,19 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 public class Employee {
+	String sTime;
+	String eTime;
+	String Name;
+	
+	
 	public Employee(String name, String startTime, String endTime) throws IOException{
-		File file = new File("C:/data.txt");
-		if(!file.exists()){
-			try {
-				file.createNewFile();
-			} catch (IOException e) {
-				e.printStackTrace();
-			}
-			FileWriter fr = new FileWriter(file.getAbsoluteFile());
-			BufferedWriter bw = new BufferedWriter(fr);
-			bw.write("Constant");
-			bw.close();
-			
-		}
+		String Name = name;
+		String sTime = startTime;
+		String eTime = endTime;
+		
 	}
+
+	
+	
+	
 }
